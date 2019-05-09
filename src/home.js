@@ -30,7 +30,6 @@ function Home() {
 
         <Weather />
         <br />
-        <br />
 
         <div className="announcement">
           <h2>Announcement</h2>
