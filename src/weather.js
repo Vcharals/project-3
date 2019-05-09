@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import ReactDOM from "react-dom";
 import "./weather.css";
 
 function getLocation() {
@@ -112,5 +111,3 @@ class SwitchFormat extends React.Component {
     );
   }
 }
-
-// ReactDOM.render(<Weather />, document.getElementById("weather"));
