@@ -17,6 +17,7 @@ function App() {
             <ul className="navbar nav nav-pills nav-fill bg-dark">
               <li className="nav-item">
                 <NavLink
+                  exact
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/"
@@ -26,6 +27,7 @@ function App() {
               </li>
               <li className="nav-item">
                 <NavLink
+                  exact
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/message"
@@ -35,6 +37,7 @@ function App() {
               </li>
               <li className="nav-item">
                 <NavLink
+                  exact
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/news"
@@ -44,6 +47,7 @@ function App() {
               </li>
               <li className="nav-item">
                 <NavLink
+                  exact
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/contact"
