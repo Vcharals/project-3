@@ -3,6 +3,7 @@ import React from "react";
 import "./home.css";
 import SlideShow from "./slideshow";
 import Weather from "./weather";
+import { setAutoFreeze } from "immer";
 
 const images = [
   "https://www.incimages.com/uploaded_files/image/970x450/getty_513881682_2000124120009280226_343051.jpg",
@@ -28,15 +29,8 @@ function Home() {
         <SlideShow images={images} />
 
         <Weather />
-
-        {/* <div className="weather" id="weather">
-          <a target="_blank" href="https://www.booked.net/weather/dallas-26868">
-            <img
-              src="https://w.bookcdn.com/weather/picture/4_26868_0_1_137AE9_251_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=36720"
-              alt="booked.net"
-            />
-          </a>
-        </div> */}
+        <br />
+        <br />
 
         <div className="announcement">
           <h2>Announcement</h2>
@@ -63,8 +57,7 @@ function Home() {
           className="calendar"
           style={{
             border: "0",
-            width: "75%",
-            height: "50%",
+            margin: "0 auto",
             id: "calendar"
           }}
         >
@@ -72,7 +65,8 @@ function Home() {
             title="googleCalendar"
             src="https://calendar.google.com/calendar/embed?src=n2gp49csv98ldcdr7t6g6m66f4%40group.calendar.google.com&ctz=America%2FChicago"
             style={{
-              width: "100%",
+              width: "850px",
+              height: "650px",
               frameborder: "0",
               scrolling: "no"
             }}

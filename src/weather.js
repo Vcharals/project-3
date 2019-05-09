@@ -75,7 +75,7 @@ export default class Weather extends React.Component {
     let tod = hr >= 17 ? "night" : "day";
 
     return (
-      <div className="container">
+      <div className="container" id="weather">
         <h1>Local Weather</h1>
         <div className="location">
           <h2>{this.state.location}</h2>
