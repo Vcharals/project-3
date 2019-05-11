@@ -17,12 +17,11 @@ function getWeather(location) {
       appid
   );
 }
-
 export default class Weather extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      format: "C",
+      format: "F",
       location: "",
       weather: "",
       temp: 0
@@ -37,10 +36,11 @@ export default class Weather extends React.Component {
         let loc = result.data.city + ", " + result.data.country;
 
         getWeather(loc).then(function(result) {
+          console.log(result);
           _this.setState({
             location: loc,
             weather: result.data.weather[0],
-            temp: result.data.main.temp
+            temp: (result.data.main.temp * (9 / 5) + 32).toFixed(0)
           });
         });
       })
@@ -76,7 +76,11 @@ export default class Weather extends React.Component {
 
     return (
       <div className="container" id="weather">
-        <h1>Local Weather</h1>
+        <h1>
+          <a href="https://weather.com/weather/today/l/USTX0761:1:US">
+            Local Weather
+          </a>
+        </h1>
         <div className="location">
           <h2>{this.state.location}</h2>
           <p>{this.state.weather.main}</p>
@@ -106,7 +110,7 @@ class SwitchFormat extends React.Component {
   render() {
     return (
       <button value={this.props.format} onClick={this.handleChange.bind(this)}>
-        Change format
+        F° / C°
       </button>
     );
   }
