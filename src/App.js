@@ -6,6 +6,7 @@ import Message from "./message";
 import News from "./news";
 import Contact from "./contact";
 
+
 // start test
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
         <Route path="/contact" component={Contact} />
       </div>
     </BrowserRouter>
+    
   );
 }
 

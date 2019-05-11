@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import "./news.css";
-import './react news copy/App.css';
-import Search from './react news copy/Search.js';
-import './react news copy/Search.css';
-import Footer from './react news copy/Footer';
-import './react news copy/Footer.css';
-import logo from './react news copy/images/react.svg';
-import news from './react news copy/images/news.png';
+import './App.css';
+import Search from './Search.js';
+import './Search.css';
+import Footer from './Footer.js';
+import './Footer.css';
+import logo from './images/react.svg';
+import news from './images/news.png';
 
 class App extends Component {
   render() {
