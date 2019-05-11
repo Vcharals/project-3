@@ -19,8 +19,8 @@ function Home() {
         <img
           src="./images/images.png"
           alt="Teacher Hub"
-          width="350"
-          height="200"
+          width="1000"
+          height="400"
         />
       </div>
 
@@ -32,7 +32,7 @@ function Home() {
         <br />
 
         <div className="announcement">
-          <h2>Announcement</h2>
+          <h2>Announcements</h2>
           <ul>
             <li>
               Students, please remember to bring your signed permission slips by

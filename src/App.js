@@ -3,7 +3,7 @@ import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import Home from "./home";
 import Message from "./message";
-import News from "./news";
+// import News from "./news";
 import Contact from "./contact";
 
 // start test
@@ -60,7 +60,7 @@ function App() {
         </header>
         <Route exact path="/" component={Home} />
         <Route path="/message" component={Message} />
-        <Route path="/news" component={News} />
+        {/* <Route path="/news" component={News} /> */}
         <Route path="/contact" component={Contact} />
       </div>
     </BrowserRouter>

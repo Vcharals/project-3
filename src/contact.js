@@ -64,11 +64,7 @@ class ContactPage extends React.Component {
             <Form.Control as="textarea" rows="5" />
           </Form.Group>
 
-          <Button
-            variant="warning"
-            type="submit"
-            onClick={this.handleFormSubmit}
-          >
+          <Button type="submit" onClick={this.handleFormSubmit}>
             Submit
           </Button>
         </Form>

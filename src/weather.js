@@ -17,7 +17,6 @@ function getWeather(location) {
       appid
   );
 }
-
 export default class Weather extends React.Component {
   constructor(props) {
     super(props);
@@ -106,7 +105,7 @@ class SwitchFormat extends React.Component {
   render() {
     return (
       <button value={this.props.format} onClick={this.handleChange.bind(this)}>
-        Change format
+        F° / C°
       </button>
     );
   }
