@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./news.css";
-import './react news copy/App.css';
-import Search from './react news copy/Search.js';
-import './react news copy/Search.css';
-import Footer from './react news copy/Footer';
-import './react news copy/Footer.css';
-import logo from './react news copy/images/react.svg';
-import news from './react news copy/images/news.png';
+import Search from '../components/Search/Search';
+import '../components/Search/Search.css';
+import Footer from '../components/Footer/Footer';
+import '../components/Footer/Footer.css';
+import logo from '../components/Images/react.svg';
+import news from '../components/Images/news.png';
 
-class App extends Component {
+class News extends Component {
   render() {
     return (
       <div className="app">
@@ -30,4 +29,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default News;

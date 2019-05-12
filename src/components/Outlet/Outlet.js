@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Outlet.css';
-import { findFlag } from './helpers';
+import { findFlag } from '../../helpers/helpers';
 
 class Outlet extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class Outlet extends Component {
 
   getSources() {
     // Make HTTP reques with Axios
-    axios.get(`https://newsapi.org/v2/sources?language=en&apiKey58fbe29457564dce8aa558654b1f3241q`).then(res => {
+    axios.get(`https://newsapi.org/v2/sources?language=en&apiKey=58fbe29457564dce8aa558654b1f3241`).then(res => {
       // Set state with result
       this.setState({ data: res.data.sources });
     });

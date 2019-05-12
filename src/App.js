@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, NavLink } from "react-router-dom";
 import "./App.css";
-import Home from "./home";
-import Message from "./message";
-import News from "./news";
-import Contact from "./contact";
+import Home from "./Pages/home";
+import Message from "./Pages/message";
+import News from "./Pages/news";
+import Contact from "./Pages/contact";
 
 
 // start test

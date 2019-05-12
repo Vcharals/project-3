@@ -1,8 +1,8 @@
 import React from "react";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./home.css";
-import SlideShow from "./slideshow";
-import Weather from "./weather";
+import SlideShow from "../components/Slideshow/slideshow";
+
 
 const images = [
   "https://www.incimages.com/uploaded_files/image/970x450/getty_513881682_2000124120009280226_343051.jpg",
@@ -66,14 +66,16 @@ function Home() {
           <iframe
             src="https://calendar.google.com/calendar/embed?src=n2gp49csv98ldcdr7t6g6m66f4%40group.calendar.google.com&ctz=America%2FChicago"
             style={{
-              border: "0",
-              width: "800",
-              height: "600",
-              frameborder: "0",
+              border: 0,
+              width: 800,
+              height: 600,
+              frameborder: 0,
               scrolling: "no"
             }}
           />
         </div>
+
+        
       </main>
     </React.Fragment>
   );

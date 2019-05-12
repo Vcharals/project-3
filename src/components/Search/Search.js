@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Display from './Display.js';
-import './Display.css';
-import Outlet from './Outlet.js';
-import './Outlet.css';
+import Display from '../display/Display.js';
+import '../display/Display.css';
+import Outlet from '../Outlet/Outlet.js';
+import '../Outlet/Outlet.css';
 
 class Search extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class Search extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
 
-    this.apiUrl = `https://newsapi.org/v2/sources?language=en&country=us&apiKey=58fbe29457564dce8aa558654b1f3241q`;
+    this.apiUrl = `https://newsapi.org/v2/sources?language=en&country=us&apiKey=58fbe29457564dce8aa558654b1f3241`;
   }
 
   handleChange(event) {
@@ -27,7 +27,7 @@ class Search extends Component {
   }
 
   // Lifecycle method
-  componentWillMount() {
+  componentDidMount() {
     // Make HTTP reques with Axios
     axios.get(this.apiUrl).then(res => {
       // Set state with result
