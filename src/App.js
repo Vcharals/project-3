@@ -5,15 +5,46 @@ import Home from "./Pages/home";
 import Message from "./Pages/message";
 import News from "./Pages/news";
 import Contact from "./Pages/contact";
+import withFirebaseAuth from 'react-with-firebase-auth'
+import * as firebase from 'firebase/app';
+import 'firebase/auth';
+import firebaseConfig from './components/Authentication/firebaseConfig';
+
+
 
 
 // start test
 
-function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <header>
+
+
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+class App extends React.Component {
+  render() {
+    const {
+      user,
+      signOut,
+      signInWithGoogle,
+    } = this.props;
+
+    return (
+        <BrowserRouter>
+      
+        
+      <div className="App" >
+      <header>
+          {
+            user
+              ? <p>Hello, {user.displayName}</p>
+              : <p>Please sign in.</p>
+          }
+
+          {
+            user
+              ? <button onClick={signOut}>Sign out</button>
+              : <button onClick={signInWithGoogle}>Sign in with Google</button>
+          }
           <nav role="navigation">
             <ul className="navbar nav nav-pills nav-fill bg-dark">
               <li className="nav-item">
@@ -61,8 +92,17 @@ function App() {
         <Route path="/contact" component={Contact} />
       </div>
     </BrowserRouter>
-    
-  );
+    );
+  }
 }
 
-export default App;
+const firebaseAppAuth = firebaseApp.auth();
+
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
+
+export default withFirebaseAuth({
+  providers,
+  firebaseAppAuth,
+})(App);
