@@ -1,9 +1,8 @@
 import React from "react";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./home.css";
-import SlideShow from "./slideshow";
-import Weather from "./weather";
-import { setAutoFreeze } from "immer";
+import SlideShow from "../Components/Slideshow/slideshow";
+import Weather from "../Components/Weather/weather";
 
 const images = [
   "https://www.incimages.com/uploaded_files/image/970x450/getty_513881682_2000124120009280226_343051.jpg",

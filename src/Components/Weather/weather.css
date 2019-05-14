@@ -40,3 +40,21 @@ button {
   font-size: 14px;
   outline: none;
 }
+
+@media (max-width: 640px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links {
+    justify-content: center;
+  }
+
+  .main-section {
+    margin: 40px;
+  }
+
+  .portfolio {
+    flex-direction: column;
+  }
+}
