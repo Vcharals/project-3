@@ -20,6 +20,10 @@ body {
   left: 746px;
 }
 
+.wi {
+  font-size: 50pt;
+  font-weight: 400;
+}
 .location {
   width: 100%;
   margin: 0 auto;
