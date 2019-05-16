@@ -20,6 +20,10 @@ body {
   left: 746px;
 }
 
+.wi {
+  font-size: 50pt;
+  font-weight: 400;
+}
 .location {
   width: 100%;
   margin: 0 auto;
@@ -39,4 +43,22 @@ button {
   background: #142b58;
   font-size: 14px;
   outline: none;
+}
+
+@media (max-width: 640px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links {
+    justify-content: center;
+  }
+
+  .main-section {
+    margin: 40px;
+  }
+
+  .portfolio {
+    flex-direction: column;
+  }
 }

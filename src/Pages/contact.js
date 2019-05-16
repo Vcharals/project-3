@@ -2,8 +2,9 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import TeacherFormSelect from "./formTeacherSelect";
-import teachers from "./teachers.json";
+import TeacherFormSelect from "../Helpers/formTeacherSelect";
+import teachers from "../Helpers/teachers.json";
+import "../Pages/contact.css";
 
 class ContactPage extends React.Component {
   state = {
