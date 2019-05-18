@@ -49,6 +49,7 @@ class App extends React.Component {
             <ul className="navbar nav nav-pills nav-fill bg-dark">
               <li className="nav-item">
                 <NavLink
+                  exact
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/"
@@ -58,6 +59,7 @@ class App extends React.Component {
               </li>
               <li className="nav-item">
                 <NavLink
+                  exact
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/message"
@@ -67,6 +69,7 @@ class App extends React.Component {
               </li>
               <li className="nav-item">
                 <NavLink
+                  exact
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/news"
@@ -76,6 +79,7 @@ class App extends React.Component {
               </li>
               <li className="nav-item">
                 <NavLink
+                  exact
                   className="nav-link"
                   activeClassName="nav-link active"
                   to="/contact"

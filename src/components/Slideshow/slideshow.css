@@ -15,7 +15,7 @@
 
 .image {
   width: 100%;
-  height: 100%;
+  height: 50%;
 }
 
 .controls {
@@ -30,6 +30,7 @@
   background-color: lightblue;
   border: none;
   border-radius: 2px;
+  width: 50px;
   padding: 15px;
   margin: 0 10px;
   cursor: pointer;
