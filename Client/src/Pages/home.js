@@ -18,16 +18,16 @@ function Home() {
         <img
           src="./images/images.png"
           alt="Teacher Hub"
-          width="1000"
+          width="900"
           height="400"
         />
       </div>
 
+      <Weather />
+
       <main className="content">
         {/* REACT SLIDESHOW */}
         <SlideShow images={images} />
-
-        <Weather />
         <br />
 
         <div className="announcement">

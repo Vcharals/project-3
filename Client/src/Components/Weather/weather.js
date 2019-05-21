@@ -78,7 +78,7 @@ export default class Weather extends React.Component {
       <div className="container" id="weather">
         <h1>
           <a
-            href="https://weather.com/weather/today/l/USTX0327:1:US"
+            href="https://www.weatherbug.com/weather-forecast/now/garland-tx-75040"
             target="_blank"
           >
             Local Weather
