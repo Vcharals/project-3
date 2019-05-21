@@ -77,7 +77,7 @@ class App extends React.Component {
             </nav>
           </header>
           <Route exact path="/" component={Home} />
-          {/* <Route path="/message" component={Message} /> */}
+          <Route path="/message" component={Message} />
           <Route path="/news" component={News} />
           <Route path="/contact" component={Contact} />
         </div>
