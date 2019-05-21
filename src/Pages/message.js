@@ -1,37 +1,59 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './message.css';
+import ChatApp from '../Components/MessageApp/ChatApp';
+
+require("../Components/MessageApp/App.css" );
+require('../Components/MessageApp/Login.css');
 
 
-export default class Message extends React.Component {
-    constructor(props) {
-      super(props);
-  
-      this.state = {
-        value: '',
-      };
-  
-      this.onChange = this.onChange.bind(this);
-    }
-  
-    onChange(event) {
-      this.setState({ value: event.target.value });
-    }
-  
-    render() {
+
+
+class MessageApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { username: '' };
+
+    // Bind 'this' to event handlers. React ES6 does not do this by default
+    this.usernameChangeHandler = this.usernameChangeHandler.bind(this);
+    this.usernameSubmitHandler = this.usernameSubmitHandler.bind(this);
+  }
+
+  usernameChangeHandler(event) {
+    this.setState({ username: event.target.value });
+  }
+
+  usernameSubmitHandler(event) {
+    event.preventDefault();
+    this.setState({ submitted: true, username: this.state.username });
+  }
+
+  render() {
+    if (this.state.submitted) {
+      // Form was submitted, now show the main App
       return (
-        <div>
-          <h1>Hello React ES6 Class Component!</h1>
-  
-          <input
-            value={this.state.value}
-            type="text"
-            onChange={this.onChange}
-          />
-  
-          <p>{this.state.value}</p>
-        </div>
+        <ChatApp username={this.state.username} />
       );
     }
+
+    // Initial page load, show a simple login form
+    return (
+      <form onSubmit={this.usernameSubmitHandler} className="username-container">
+        <h1>React Instant Chat</h1>
+        <div>
+          <input
+            type="text"
+            onChange={this.usernameChangeHandler}
+            placeholder="Enter a username..."
+            required />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    );
   }
-  
+
+}
+MessageApp.defaultProps = {
+};
+
+export default MessageApp;
