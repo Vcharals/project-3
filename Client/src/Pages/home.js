@@ -14,18 +14,18 @@ const images = [
 function Home() {
   return (
     <React.Fragment>
-      {/* <div className="container"> */}
-      <div className="siteLogo">
-        <img
-          src="./images/images.png"
-          alt="Teacher Hub"
-          width="900"
-          height="400"
-        />
-      </div>
+      <div className="container">
+        <div className="siteLogo">
+          <img
+            src="./images/images.png"
+            alt="Teacher Hub"
+            width="900"
+            height="400"
+          />
+        </div>
 
-      <Weather />
-      {/* </div> */}
+        <Weather />
+      </div>
 
       <main className="content">
         {/* REACT SLIDESHOW */}
@@ -49,24 +49,6 @@ function Home() {
             </li>
           </ul>
         </div>
-
-        {/* <div contenteditable="true">
-          <h2>Announcements</h2>
-          <ul>
-            <li>
-              Students, please remember to bring your signed permission slips by
-              Tuesday if you plan on joining us on our trip to the Perot Museum.
-            </li>
-            <li>
-              Parents, please email me if you are wanting to be a chaperone
-              during our Perot Museum Field Trip.
-            </li>
-            <li>
-              Please note that we will be having a potluck on Monday May 5th in
-              observance of Cinco De Mayo!
-            </li>
-          </ul>
-        </div> */}
 
         <br />
         <br />

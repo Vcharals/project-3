@@ -12,11 +12,9 @@ body {
   height: 50%;
   text-align: center;
   color: #142b58;
-  padding: 0.5em 0 0 0;
-  margin: 2em auto 0 auto;
+  margin: auto;
   background: url("https://www.federallabs.org/sites/default/files/field/image/1FLcfl2052.jpg");
   box-shadow: 0 5px 0 0 #475e8b;
-  position: relative;
   left: 746px;
 }
 
@@ -28,11 +26,6 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
-/* .i {
-  font-size: 38px;
-  color: #475e8b;
-} */
 
 button {
   width: 100%;

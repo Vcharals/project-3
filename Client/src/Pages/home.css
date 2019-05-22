@@ -42,16 +42,18 @@ h2 {
 }
 
 /* WEATHER */
-.weather {
+/* .weather {
   float: left;
-}
+} */
 
 /* CALENDAR */
 .calendar {
   text-align: center;
 }
 
-/* .container {
-  width: 100%;
-  text-align: center;
-} */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}

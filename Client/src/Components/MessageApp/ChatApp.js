@@ -47,7 +47,7 @@ class ChatApp extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="chat-container">
         <h3>React Chat App</h3>
         <Messages messages={this.state.messages} />
         <ChatInput onSend={this.sendHandler} />
