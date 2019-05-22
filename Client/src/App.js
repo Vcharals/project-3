@@ -22,7 +22,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <header>
-            {user ? <p>Hello, {user.displayName}</p> : ""}
+            {user ? <p id="name"> Hello, {user.displayName}</p> : ""}
 
             {user ? (
               <button onClick={signOut}>Sign out</button>

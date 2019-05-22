@@ -32,6 +32,10 @@
   }
 }
 
-/* p {
+header {
   text-align: right;
-} */
+}
+
+button {
+  text-align: right;
+}
