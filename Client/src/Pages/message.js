@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./message.css";
 import ChatApp from "../Components/MessageApp/ChatApp";
 
-require("../Components/MessageApp/App.css");
+require("../Components/MessageApp/messageApp.css");
 require("../Components/MessageApp/Login.css");
 
 class MessageApp extends React.Component {

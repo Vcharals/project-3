@@ -14,6 +14,7 @@ const images = [
 function Home() {
   return (
     <React.Fragment>
+      {/* <div className="container"> */}
       <div className="siteLogo">
         <img
           src="./images/images.png"
@@ -24,6 +25,7 @@ function Home() {
       </div>
 
       <Weather />
+      {/* </div> */}
 
       <main className="content">
         {/* REACT SLIDESHOW */}

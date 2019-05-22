@@ -75,7 +75,7 @@ export default class Weather extends React.Component {
     let tod = hr >= 17 ? "night" : "day";
 
     return (
-      <div className="container" id="weather">
+      <div className="weatherContainer" id="weather">
         <h1>
           <a
             href="https://www.weatherbug.com/weather-forecast/now/garland-tx-75040"
