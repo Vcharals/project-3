@@ -50,3 +50,10 @@ h2 {
 .calendar {
   text-align: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}

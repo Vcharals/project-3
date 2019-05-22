@@ -14,18 +14,18 @@ const images = [
 function Home() {
   return (
     <React.Fragment>
-      {/* <div className="container"> */}
-      <div className="siteLogo">
-        <img
-          src="./images/images.png"
-          alt="Teacher Hub"
-          width="900"
-          height="400"
-        />
-      </div>
+      <div className="container">
+        <div className="siteLogo">
+          <img
+            src="./images/images.png"
+            alt="Teacher Hub"
+            width="900"
+            height="400"
+          />
+        </div>
 
-      <Weather />
-      {/* </div> */}
+        <Weather />
+      </div>
 
       <main className="content">
         {/* REACT SLIDESHOW */}
