@@ -37,7 +37,7 @@ class ContactPage extends React.Component {
 
   render() {
     return (
-      <div className="container" id="formHolder">
+      <div className="message-container" id="formHolder">
         <br />
         <h1>Reach Out To Us!</h1>
         <br />

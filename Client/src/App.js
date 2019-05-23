@@ -50,7 +50,7 @@ class App extends React.Component {
                     activeClassName="nav-link active"
                     to="/message"
                   >
-                    Message Board
+                    Teacher Chat
                   </NavLink>
                 </li>
                 <li className="nav-item">

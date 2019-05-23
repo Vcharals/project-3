@@ -23,3 +23,7 @@
     flex-direction: column;
   }
 }
+
+.message-container {
+  margin-left: 450px;
+}
