@@ -8,7 +8,7 @@ router.use("/api", apiRoutes);
 
 //this sends default page if above route doesn't hit
 router.use((req, res) =>
-  res.sendFile(path.join(__dirname, "../client/build/index.html"))
+  res.sendFile(path.join(__dirname, "Client/build","index.html"))
 );
 
 
